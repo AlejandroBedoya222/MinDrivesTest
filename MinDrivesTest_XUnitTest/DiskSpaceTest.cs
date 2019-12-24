@@ -20,13 +20,13 @@ namespace MinDrivesTest_XUnitTest
         }
 
         [Fact]
-        public void MinDrivesConventionalresult5()
+        public void MinDrivesresult5()
         {
             //Arrange
             var used = new int[] { 750, 800, 850, 900, 950 };
             var total = new int[] { 800, 850, 900, 950, 1000 };
             //Act
-            var result = DiskSpace.MinDrivesConventional(used, total);
+            var result = DiskSpace.MinDrives(used, total);
             //Assert                             
             Assert.IsType<int>(result);
             Assert.True(result == 5);
@@ -46,13 +46,13 @@ namespace MinDrivesTest_XUnitTest
         }
 
         [Fact]
-        public void MinDrivesConventionalResult1()
+        public void MinDrivesResult1()
         {
             //Arrange
             var used = new int[] { 1, 200, 200, 199, 200, 200 };
             var total = new int[] { 1000, 200, 200, 200, 200, 200 };
             //Act
-            var result = DiskSpace.MinDrivesConventional(used, total);
+            var result = DiskSpace.MinDrives(used, total);
             //Asserts
             Assert.IsType<int>(result);
             Assert.Equal(1, result);
@@ -72,13 +72,13 @@ namespace MinDrivesTest_XUnitTest
         }
 
         [Fact]
-        public void MinDrivesConventionalResult49()
+        public void MinDrivesResult49()
         {
             //Arrange
             var used = new int[] { 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49 };
             var total = new int[] { 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50 };
             //Act
-            var result = DiskSpace.MinDrivesConventional(used, total);
+            var result = DiskSpace.MinDrives(used, total);
             //Asserts
             Assert.IsType<int>(result);
             Assert.Equal(49, result);
